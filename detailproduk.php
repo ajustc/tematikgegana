@@ -13,6 +13,11 @@ $ambil = $koneksi->query("SELECT * FROM tbl_produk WHERE id_produk='$id_produk'"
 //lalu di simpan dalam bentuk array
 $detail = $ambil->fetch_assoc();
 
+// menyimpan nama produk ke variable nama
+$nama = $detail["nama_produk"];
+// mengambil nama produk berdasarakan alphabet & space - dari variable nama
+$substr = preg_replace("/[^a-zA-Z\s]/", "", $nama);
+
 ?>
 
 <section class="content">
@@ -34,7 +39,11 @@ $detail = $ambil->fetch_assoc();
 								<form method="post">
 									<div class="form-group">
 										<div class="input-group">
-											<input type="number" min="30" class="form-control" placeholder="Min 30" name="jumlah">
+											<?php if ($nama == $substr) : ?>
+												<input type="number" min="10" class="form-control" placeholder="Min 10" name="jumlah">
+											<?php else : ?>
+												<input type="number" min="30" class="form-control" placeholder="Min 30" name="jumlah">
+											<?php endif ?>
 											<span class="input-group-btn text-center">
 												<button class="btn btn-primary cart" name="beli"><i class="fa fa-shopping-cart"></i>
 													Pesan
@@ -56,7 +65,7 @@ $detail = $ambil->fetch_assoc();
 								//masukan di keranjang belanja
 								$_SESSION["cart"][$id_produk] = $jumlah;
 
-								echo "<script> alert('produk telah masuk ke keranjang belanja');</script>";
+								echo "<script> alert('Produk telah masuk ke keranjang belanja'.);</script>";
 								echo "<script> location='keranjang.php';</script>";
 							}
 							?>

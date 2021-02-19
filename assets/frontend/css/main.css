@@ -10,6 +10,10 @@ body {
   padding: 0;
 }
 
+.disabled {
+  cursor: not-allowed;
+}
+
 .caro {
   height: 100px;
 }
@@ -130,6 +134,26 @@ body {
   right: 0;
 }
 
+.hayo3::before {
+  content: "";
+  width: 10%;
+  height: 75%;
+  background: #fef8ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hayo3::after {
+  content: "";
+  width: 10%;
+  height: 90%;
+  background: #fff7f7;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background: white;
@@ -201,6 +225,7 @@ a#scrollUp i {
 
 .header_top {
   background: none repeat scroll 0 0 #f0f0e9;
+  box-shadow: 0px 1px 4px rgba(145, 145, 145, 0.5);
 }
 
 .contactinfo ul li:first-child {
@@ -237,7 +262,7 @@ a#scrollUp i {
 }
 
 .social-icons ul li a i:hover {
-  color: #fff;
+  /* color: #fff; */
   transition: all 0.9s ease 0s;
   -moz-transition: all 0.9s ease 0s;
   -webkit-transition: all 0.9s ease 0s;
@@ -494,11 +519,11 @@ ul.sub-menu {
   font-size: 17px;
 }
 
-.companyinfo .social-icons a {
+.social-icons a {
   color: #b3b3ad;
 }
 
-.companyinfo .social-icons a:hover {
+.social-icons *:hover {
   color: #1fab89;
 }
 

@@ -13,7 +13,7 @@
 							</h2>
 							<p>Cipondoh Makmur <br />Tanggerang</p>
 							<div class="social-icons mt-10">
-								<a href="#"><i class="fa fa-home"></i> Tentang Kami</a></li>
+								<a href="tentangkami.php"><i class="fa fa-home"></i> Tentang Tematik Gegana</a></li>
 							</div>
 						</div>
 					</div>
@@ -29,10 +29,22 @@
 								Kota Tangerang Banten 15148
 							</p>
 							<div class="social-icons mb-10">
-								<a href="#"><i class="fa fa-phone"></i> XXXXXXXXX</a></li>
+								<a href="number">
+									<i class="fa fa-phone" style="font-size:18px"></i>
+									XXXXXXXXX
+								</a>
 							</div>
 							<div class="social-icons mb-10">
-								<a href="#"><i class="fa fa-envelope"></i> XXXXXXXX@gmail.com</a>
+								<a href="account">
+									<i class="fa fa-instagram" style="font-size:18px"></i>
+									Instagram
+								</a>
+							</div>
+							<div class="social-icons mb-10">
+								<a href="mailto:someone@example.com">
+									<i class="fa fa-envelope" style="font-size:18px"></i>
+									XXXXXXXX@gmail.com
+								</a>
 							</div>
 						</div>
 					</div>

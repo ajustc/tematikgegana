@@ -15,7 +15,7 @@ else {
 }
 
 // di larikan ke halaman keranjang
-echo "<script>alert('produk telah masuk ke keranjang belanja');</script>";
+echo "<script>alert('Produk telah masuk ke keranjang belanja.');</script>";
 echo "<script>location='keranjang.php';</script>";
 
 /* //di cek apakah barang yang di beli sudah ada di tabel order temp

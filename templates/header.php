@@ -33,6 +33,12 @@ $ambil
 	<link href="assets/frontend/css/main.css" rel="stylesheet">
 	<link href="assets/frontend/css/responsive.css" rel="stylesheet">
 
+	<!-- Fav -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
 	<!-- 	<link rel="stylesheet" type="text/css" href="assets/frontend/js/jquery-ui/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="assets/frontend/css/style.css"> -->
 
@@ -43,11 +49,11 @@ $ambil
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-	<link rel="shortcut icon" href="images/ico/favicon.ico">
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="assets/frontend/images/fav/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/frontend/images/fav/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/frontend/images/fav/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/frontend/images/fav/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/frontend/images/fav/apple-touch-icon-57-precomposed.png">
 </head>
 <!--/head-->
 
@@ -61,14 +67,34 @@ $ambil
 					<div class="col-sm-6">
 						<div class="social-icons">
 							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-phone"></i> XXXXXXXXX</a></li>
+								<li>
+									<a href="tentangkami.php">
+										<i class="fa fa-home"></i>
+										Tentang Tematik Gegana
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-6">
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-envelope"></i> XXXXXXXX@gmail.com</a></li>
+								<li>
+									<a href="#">
+										<i class="fa fa-envelope"></i>
+										XXXXXXXX@gmail.com
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">
+										<i class="fa fa-phone"></i>
+										XX XXXX XXXX
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -83,7 +109,7 @@ $ambil
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index.php"><img src="assets\frontend\images\home\logo2.png" alt="" /></a>
+							<a href="index.php"><img src="assets\frontend\images\home\tematikgegana2.png" alt="Tematik Gegana" /></a>
 						</div>
 					</div>
 					<div class="col-sm-8">
@@ -138,7 +164,7 @@ $ambil
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.php" class="active">Home</a></li>
+								<li><a href="index.php" class="active">Beranda</a></li>
 								<li><a data-toggle="modal" href="#carabayar">Cara Bayar</a></li>
 
 								<!-- Modal cara pesan -->

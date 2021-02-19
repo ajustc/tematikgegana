@@ -67,6 +67,7 @@ if (empty($halaman)) {
                                             <a href="lihat_pembayaran.php?id=<?php echo $pecah["id_pesanan"]; ?>" class="btn btn-danger btn-sm">Lihat Pembayaran</a>
                                             <a href="laporan_produk.php?id=<?php echo $pecah["id_pesanan"]; ?>" class="btn btn-warning btn-sm">Laporkan Pesananmu</a>
                                         <?php endif ?>
+
                                     <?php endif ?>
                                 </td>
                             </tr>

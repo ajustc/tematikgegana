@@ -36,7 +36,7 @@ if (empty($_SESSION["cart"]) or !isset($_SESSION["cart"])) {
                                 <?php
                                 $sql = mysqli_query($koneksi, "SELECT * from tbl_produk WHERE id_produk='$id_produk'");
                                 $d = $sql->fetch_assoc();
-                                $subtotal = $d['harga'] * $jumlah;
+                                $subtotal = ((int)$d['harga'] * (int)$jumlah);
                                 ?>
                                 <tbody>
                                     <tr>
